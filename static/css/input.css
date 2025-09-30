@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-school-text: #2A7BD9;
+    --breakpoint-cp: 300px; /* custom cellphones */
+    --breakpoint-tablet: 768px; /* custom tablet size */
+    --breakpoint-laptop: 992px; /* common laptop size */
+}
+
+th {
+    font-size: 18px;
+    color: #003A02;
+}

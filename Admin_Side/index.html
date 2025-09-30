@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/static/css/output.css">
+  <title>MyKabsupanion: Sign In</title>
+</head>
+<body class="h-full flex items-center justify-center bg-gray-100 relative">
+  <form action="dashboard.html" method="" class="bg-white p-7 rounded-md shadow-md cp:w-80 laptop:w-[400px] cp:h-auto max-w-sm mb-10 z-10 flex flex-col justify-between">
+    <div class="text-center font-bold cp:text-[25px] laptop:text-3xl mb-5">
+      <span>MyKabsupanion</span>
+    </div>
+    <div class="space-y-4">
+      <div>
+        <label for="student_number" class="cp:text-[14px] laptop:text-[16px] block font-semibold text-gray-500">Student Number:</label>
+        <input type="text" maxlength="9" id="student_number" name="student_number" class="w-full cp:text-[14px] laptop:text-[16px] mt-2 h-10 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required/>
+      </div>
+      <div>
+        <label for="password" class="cp:text-[14px] laptop:text-[16px] block font-semibold text-gray-500">Password:</label>
+        <input type="password" id="password" name="password" class="w-full cp:text-[14px] laptop:text-[16px] mt-2 h-10 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required/>
+      </div>
+    </div>
+    <div class="mt-6">
+      <button type="submit" class="w-full cp:text-[14px] laptop:text-[16px] h-10 bg-green-600 text-white rounded hover:bg-green-700 transition font-semibold">Sign in</button>
+    </div>
+    <p class="text-[14px] text-center font-medium mt-4">Exclusive for BSCS-1A Admins only.</p>
+  </form>
+    <img src="/Images/Laya_At_Diwa.svg" alt="Logo" class="absolute bottom-0 cp:right-10 laptop:right-20 h-100 laptop:h-120 w-auto z-0"/>
+</body>
+</html>
