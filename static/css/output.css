@@ -469,6 +469,15 @@
   .text-\[16px\] {
     font-size: 16px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
   .leading-4 {
     --tw-leading: calc(var(--spacing) * 4);
     line-height: calc(var(--spacing) * 4);
@@ -519,6 +528,12 @@
   }
   .text-gray-800 {
     color: var(--color-gray-800);
+  }
+  .text-green-500 {
+    color: var(--color-green-500);
+  }
+  .text-green-600 {
+    color: var(--color-green-600);
   }
   .text-green-700 {
     color: var(--color-green-700);
@@ -682,16 +697,6 @@
       width: calc(var(--spacing) * 80);
     }
   }
-  .cp\:w-200 {
-    @media (width >= 300px) {
-      width: calc(var(--spacing) * 200);
-    }
-  }
-  .cp\:w-270 {
-    @media (width >= 300px) {
-      width: calc(var(--spacing) * 270);
-    }
-  }
   .cp\:space-y-5 {
     @media (width >= 300px) {
       :where(& > :not(:last-child)) {
@@ -748,6 +753,11 @@
   .cp\:text-\[16px\] {
     @media (width >= 300px) {
       font-size: 16px;
+    }
+  }
+  .cp\:text-\[18px\] {
+    @media (width >= 300px) {
+      font-size: 18px;
     }
   }
   .cp\:text-\[20px\] {
@@ -960,9 +970,9 @@
       font-size: 20px;
     }
   }
-  .sm\:w-70 {
-    @media (width >= 40rem) {
-      width: calc(var(--spacing) * 70);
+  .laptop\:text-\[23px\] {
+    @media (width >= 992px) {
+      font-size: 23px;
     }
   }
   .sm\:p-5 {
