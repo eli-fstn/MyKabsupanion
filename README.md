@@ -1,16 +1,62 @@
-# React + Vite
+# MyKabsupanion — BSCS-1A Section Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MyKabsupanion is a section-exclusive web portal developed to support the academic needs of **BSCS-1A** students. The system provides a centralized platform for managing tasks, class schedules, activity tracking, and the sharing of academic notes within the section.
 
-Currently, two official plugins are available:
+> **status** `developing` &nbsp; **stack** `React` &nbsp; **audience** `BSCS-1A only`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+MyKabsupanion was developed in response to the lack of a unified academic management tool for the BSCS-1A section. The portal consolidates essential academic resources and tools into a single, accessible interface — reducing reliance on informal communication channels and improving the section's overall academic organization.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+| Feature | Description |
+|---|---|
+| Task List | Section-wide task management |
+| Class Schedule | Weekly class schedule for BSCS-1A |
+| Class List | Official list of students in the section |
+| Activity Tracker | Upcoming and past section activities |
+| Notes Sharing | Upload and access notes within the section |
+
+---
+
+## Two Audiences
+
+| Audience | Access | What they can do |
+|---|---|---|
+| BSCS-1A Students | Section access | View all content; upload notes |
+| Administrators | Admin access | Full content management across all features |
+
+---
+
+## Tech Stack
+
+| Layer | Technology | Version |
+|---|---|---|
+| Frontend framework | React | 19.2.7 |
+| Frontend language | JavaScript | — |
+| Build tool | Vite | 8.0.9 |
+| Routing | React Router DOM | 7.17.0 |
+| HTTP client | Axios | 1.17.0 |
+| Backend framework | — | — |
+| Backend runtime | — | — |
+| Database | — | — |
+
+---
+
+## Project Team
+
+| Name | Role |
+|---|---|
+| Elijah | Front-End Developer |
+| Lorenz Tuboro | Back-End Developer |
+
+---
+
+## License
+
+Academic section project — BSCS-1A, AY 2025–2026. All rights reserved.
