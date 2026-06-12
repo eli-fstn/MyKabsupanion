@@ -1,62 +1,73 @@
-# MyKabsupanion — BSCS-1A Section Portal
+# 📘 MyKabsupanion — BSCS-1A Section Portal
 
-MyKabsupanion is a section-exclusive web portal developed to support the academic needs of **BSCS-1A** students. The system provides a centralized platform for managing tasks, class schedules, activity tracking, and the sharing of academic notes within the section.
+**MyKabsupanion** is a section-centric academic web portal developed to support the academic needs of BSCS students.  
+It provides a centralized platform for managing tasks, class schedules, activity tracking, and sharing academic notes within a section-based environment.
 
-> **status** `developing` &nbsp; **stack** `React` &nbsp; **audience** `BSCS-1A only`
-
----
-
-## Overview
-
-MyKabsupanion was developed in response to the lack of a unified academic management tool for the BSCS-1A section. The portal consolidates essential academic resources and tools into a single, accessible interface — reducing reliance on informal communication channels and improving the section's overall academic organization.
+![Status](https://img.shields.io/badge/Status-Developing-00C853)
+![Audience](https://img.shields.io/badge/Audience-Section--Based-purple)
+![Platform](https://img.shields.io/badge/Type-Web%20Application-blue)
 
 ---
 
-## Features
+## 📌 Overview
+
+**MyKabsupanion** was developed to address the need for a unified academic management tool within a section-based setup.
+
+The platform consolidates essential academic resources into a single, accessible interface — reducing fragmented communication and improving organization, collaboration, and productivity among students.
+
+---
+
+## ✨ Features
 
 | Feature | Description |
-|---|---|
-| Task List | Section-wide task management |
-| Class Schedule | Weekly class schedule for BSCS-1A |
-| Class List | Official list of students in the section |
-| Activity Tracker | Upcoming and past section activities |
-| Notes Sharing | Upload and access notes within the section |
+|--------|-------------|
+| 📝 Task List | Manage and track academic tasks and deadlines efficiently |
+| 📅 Class Schedule | View weekly class schedules in an organized format |
+| 📚 Notes Sharing | Upload, access, and share study notes and reviewers |
+| 📊 Activity Tracker | Monitor upcoming, ongoing, and completed academic activities |
+| 👥 Class List | View the official list of students in the section |
 
 ---
 
-## Two Audiences
+## 👥 User Roles
 
-| Audience | Access | What they can do |
-|---|---|---|
-| BSCS-1A Students | Section access | View all content; upload notes |
-| Administrators | Admin access | Full content management across all features |
+| Role | Access Level | Permissions |
+|------|-------------|-------------|
+| 🎓 Students | Section Access | View content, manage tasks, upload notes |
+| 🛠️ Administrators | Full Access | Manage all content and system features |
 
 ---
 
-## Tech Stack
+## 🧰 Tech Stack
 
 | Layer | Technology | Version |
-|---|---|---|
-| Frontend framework | React | 19.2.7 |
-| Frontend language | JavaScript | — |
-| Build tool | Vite | 8.0.9 |
+|------|------------|---------|
+| Frontend Framework | React | 19.2.7 |
+| Frontend Language | JavaScript | — |
+| Build Tool | Vite | 8.0.9 |
 | Routing | React Router DOM | 7.17.0 |
-| HTTP client | Axios | 1.17.0 |
-| Backend framework | — | — |
-| Backend runtime | — | — |
+| HTTP Client | Axios | 1.17.0 |
+| Backend | — | — |
 | Database | — | — |
 
 ---
 
-## Project Team
+## 👨‍💻 Project Team
 
 | Name | Role |
-|---|---|
+|------|------|
 | Elijah Festin | Front-End Developer |
 | Lorenz Tuboro | Back-End Developer |
 
 ---
 
-## License
+## 📄 Disclaimer
 
-Academic section project — BSCS-1A, AY 2025–2026. All rights reserved.
+This is a **personal development project concept**, not an official school system or academic requirement. It is built for learning, experimentation, and solving observed gaps in student organization tools.
+
+---
+
+## 📌 License
+
+This project is intended for academic and personal use only.  
+All rights reserved.
