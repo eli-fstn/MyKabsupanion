@@ -1,13 +1,25 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import Button from "../../components/Button";
 
 function LogIn() {
 
+	const isNumber = (value) => /^[0-9]+$/.test(value);
+	const [studentNumber, setStudentNumber] = useState("");
 	const navigate = useNavigate();
 
+// WILL CHANGE THE ALERT INTO MODALS SOON
 	const handleLogIn = (e) => {
-		e.preventDefault();
-		navigate("/dashboard")
+		if (studentNumber.length === 0) {
+			alert("Input field can not be empty!");
+		}
+		else if (studentNumber.length < 9 || !isNumber) {
+			alert("Invalid Credentials");
+		} 
+		else {
+			e.preventDefault();
+			navigate("/dashboard");
+		}
 	}
 
 	return(
@@ -15,13 +27,13 @@ function LogIn() {
 
 			{/* LOG IN FORM */}
 			<div className="absolute inset-0 flex items-center justify-center z-1 px-4">
-				<form onSubmit={handleLogIn} className="bg-white flex flex-col p-8 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] w-full max-w-xs sm:max-w-sm">
+				<form onSubmit={handleLogIn} className="bg-[#FAF9F6] flex flex-col p-8 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] w-full max-w-xs sm:max-w-sm">
 					<div className="flex items-center justify-center mb-10">
 						<img className="w-10 sm:w-13" src="/assets/CvSU-logo.png" alt="Logo"/>
 						<p className="font-bold text-xl sm:text-2xl pl-3 text-[#1B651B]">MyKabsupanion</p>
 					</div>
 					<label className="text-[#A9A9A9] font-bold text-[1rem] my-0" htmlFor="student-number">Student Number</label>
-					<input className="border border-gray-300 rounded-md my-2 p-2 w-full outline-none focus:border-green-700" type="text" maxLength={9} id="student-number"/>
+					<input onChange={(e) => setStudentNumber(e.target.value)} className="border border-gray-300 rounded-md my-2 p-2 w-full outline-none focus:border-green-700" type="text" maxLength={9} id="student-number"/>
 					<div className="flex justify-center mt-8">
 						<Button type="submit" text="Sign In" BGColor="bg-[#1B651B]" width="w-fit"/>
 					</div>
