@@ -1,7 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import LogIn from "./pages/student/LogIn";
+import Dashboard from "./pages/student/Dashboard";
+
 function App() {
   return (
-  <h1 className="text-red-500 text-[5rem] font-bold">Mark this as a beggining of new era.</h1>
+    <Routes>
+      <Route path="/" element={<LogIn />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   );
 }
 
-export default App
+export default App;
