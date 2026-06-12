@@ -52,7 +52,7 @@ MyKabsupanion was developed in response to the lack of a unified academic manage
 
 | Name | Role |
 |---|---|
-| Elijah | Front-End Developer |
+| Elijah Festin | Front-End Developer |
 | Lorenz Tuboro | Back-End Developer |
 
 ---
