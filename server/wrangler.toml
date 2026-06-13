@@ -1,0 +1,7 @@
+name = "kabsupanion-api"
+main = "src/index.ts"
+compatibility_date = "2025-06-01"
+
+# Secrets (DATABASE_URL, JWT_SECRET) are NOT set here.
+# Local:      put them in .dev.vars
+# Production: run `wrangler secret put DATABASE_URL`
