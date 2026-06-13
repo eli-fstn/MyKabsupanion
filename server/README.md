@@ -23,6 +23,24 @@ resource plus a health check, runnable locally and deployable to Workers.
 | GET    | `/tasks`  | List all tasks, newest first                                       |
 | POST   | `/tasks`  | Create a task from `{ title, description?, dueDate? }`; `title` required |
 
+## Status — what's up and running
+
+**Phase 0: ✅ complete and deployed.**
+
+| Capability | Status | Notes |
+| ---------- | ------ | ----- |
+| `GET /health` | ✅ live | Returns `{ "ok": true }`; no DB access. |
+| `GET /tasks` | ✅ live | Lists tasks newest-first from Neon. |
+| `POST /tasks` | ✅ live | Creates a task; `400` on missing/empty `title` or invalid JSON. |
+| Neon `tasks` table | ✅ migrated | Created via `npm run db:migrate`; data persists. |
+| Local dev (`wrangler dev`) | ✅ verified | Full create/list loop confirmed locally. |
+| Production (`wrangler deploy`) | ✅ deployed | Live `*.workers.dev` URL passes all checks. |
+| Auth / JWT | 🔲 Phase 1 | `JWT_SECRET` is a placeholder; no auth yet. |
+| Other tables & routes | 🔲 Phase 1 | users/admins, subjects, schedule, notes, announcements, Cloudinary. |
+
+See [CHANGELOG.md](./CHANGELOG.md) for the release summary and [CHANGES.md](./CHANGES.md)
+for the development journal.
+
 ## Why `DATABASE_URL` is configured in two places
 
 This is the #1 thing that breaks Drizzle-on-Workers setups:
