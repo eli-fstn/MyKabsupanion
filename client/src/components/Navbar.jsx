@@ -2,12 +2,14 @@ import { Icon } from "@iconify/react";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-
-function Navbar({ studentName = "Juan Dela Cruz", studentNumber = 251234567 }) {
+function Navbar() {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const navigate = useNavigate();
+  const studentDetails = [
+    { studentName: "Juan Dela Cruz", studentNumber: "251231231"}
+  ]
 
   const userSignOut = () => {
     setDropdownOpen(false);
@@ -44,8 +46,12 @@ function Navbar({ studentName = "Juan Dela Cruz", studentNumber = 251234567 }) {
             <Icon className="text-gray-400" icon="akar-icons:person" width="25" height="25" />
           </div>
           <div className="flex flex-col text-[#E5E5E5] font-bold leading-4">
-            <p className="uppercase">{studentName}</p>
-            <p className="text-[.7rem]">{studentNumber}</p>
+            {studentDetails.map((s) => (
+              <>
+                <p className="uppercase">{s.studentName}</p>
+                <p className="text-[.7rem]">{s.studentNumber}</p>
+              </>
+            ))}
           </div>
         </div>
 

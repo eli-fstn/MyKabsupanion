@@ -31,7 +31,7 @@ function TaskList({ studentName="Juan" }) {
       </div>
 
       {/* TASK TABLE */}
-      <div className="bg-white w-full mt-5 shadow-[0_8px_30px_rgba(0,0,0,0.12)] rounded-xl overflow-hidden">
+      <div className="bg-white w-full mt-5 border border-gray-200 rounded-xl overflow-hidden">
         <table className="w-full">
           <thead>
             <tr className="grid grid-cols-[2fr_1fr_1fr] gap-4 bg-[#F5F5F5] p-3 items-center text-[#888888] font-bold border-b border-gray-200">
