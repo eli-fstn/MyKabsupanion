@@ -2,23 +2,20 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Button from "../../components/Button";
 
-function LogIn() {
-
-	const isNumber = (value) => /^[0-9]+$/.test(value);
-	const [studentNumber, setStudentNumber] = useState("");
+function AdminLogIn(){
+  // const isNumber = (value) => /^[0-9]+$/.test(value);
+	const [adminUser, setAdminUser] = useState("");
+  const [adminPassword, setAdminPassword] = useState("");
 	const navigate = useNavigate();
 
 // WILL CHANGE THE ALERT INTO MODALS SOON
 	const handleLogIn = (e) => {
-		if (studentNumber.length === 0) {
+		if (adminUser.length === 0 || adminPassword.length === 0) {
 			alert("Input field can not be empty!");
 		}
-		else if (studentNumber.length < 9 || !isNumber(studentNumber)) {
-			alert("Invalid Credentials");
-		} 
 		else {
 			e.preventDefault();
-			navigate("/dashboard");
+			navigate("/admindashboard");
 		}
 	}
 
@@ -30,10 +27,12 @@ function LogIn() {
 				<form onSubmit={handleLogIn} className="bg-[#FAF9F6] flex flex-col p-5 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] w-80 max-w sm:max-w-sm">
 					<div className="flex items-center justify-center mb-10">
 						<img className="w-10 sm:w-13" src="/assets/CvSU-logo.png" alt="Logo"/>
-						<p className="font-bold text-xl sm:text-2xl pl-3 text-[#1B651B]">MyKabsupanion</p>
+						<p className="font-bold text-xl sm:text-2xl pl-3 text-[#1B651B]">Administrator</p>
 					</div>
-					<label className="text-[#A9A9A9] font-bold text-[.9rem] my-0" htmlFor="student-number">Student Number</label>
-					<input onChange={(e) => setStudentNumber(e.target.value)} className="border border-gray-300 rounded-md text-[.9rem] my-2 p-1 w-full max-w outline-none focus:border-green-700" type="text" maxLength={9} id="student-number"/>
+					<label className="text-[#A9A9A9] font-bold text-[.9rem] my-0" htmlFor="student-number">Username</label>
+					<input onChange={(e) => setAdminUser(e.target.value)} className="border border-gray-300 rounded-md text-[.9rem] my-2 p-1 w-full max-w outline-none focus:border-green-700" type="text" maxLength={9} id="student-number"/>
+					<label className="text-[#A9A9A9] font-bold text-[.9rem] my-0" htmlFor="student-number">Password</label>
+					<input onChange={(e) => setAdminPassword(e.target.value)} className="border border-gray-300 rounded-md text-[.9rem] my-2 p-1 w-full max-w outline-none focus:border-green-700" type="password" id="passwordForAdmin"/>
 
 					{/* BUTTON */}
 					<div className="flex justify-center mt-8">
@@ -50,4 +49,4 @@ function LogIn() {
 	);
 }
 
-export default LogIn;
+export default AdminLogIn;
