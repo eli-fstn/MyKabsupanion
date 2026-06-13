@@ -9,7 +9,7 @@ function TaskList({ studentName="Juan", tasks=5 }) {
         </div>
       </div>
       <div className="mt-5">
-        <button></button>
+        <button onClick={(null)}></button>
       </div>
     </section>
   );

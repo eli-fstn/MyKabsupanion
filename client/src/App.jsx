@@ -6,7 +6,6 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import Error503 from "./pages/errors/Error503.jsx";
 import Error404 from "./pages/errors/Error404.jsx";
 
-
 function App() {
   return (
     <Routes>
