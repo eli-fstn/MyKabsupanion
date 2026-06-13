@@ -1,13 +1,18 @@
 import Navbar from "../../components/Navbar";
+import TaskList from "../sections/TaskList";
 
 function Dashboard() {
-  return(
-    <body className="bg-[#F4F4F4]">
-      <div className="">
-        <Navbar/>
-        <h1>Hello, Juan!</h1>
+  return (
+    <html className="scroll-smooth">
+      <div className="bg-[#F4F4F4] min-h-screen">
+        <div className="fixed top-0 left-0 right-0 z-50">
+          <Navbar />
+        </div>
+        <div className="pt-16"> {/* adjust value to match navbar height */}
+          <TaskList />
+        </div>
       </div>
-    </body>
+    </html>
     
   );
 }
