@@ -61,6 +61,9 @@ function Footer() {
             <p onClick={() => document.getElementById("task-list")?.scrollIntoView()} className="text-sm text-white/70 hover:text-white transition hover:translate-x-1 duration-200 whitespace-nowrap font-medium mt-1 sm:mt-3">Task List</p>
             <p onClick={() => document.getElementById("class-sched")?.scrollIntoView()} className="text-sm text-white/70 hover:text-white transition hover:translate-x-1 duration-200 whitespace-nowrap font-medium">Class Schedule</p>
             <p onClick={() => document.getElementById("class-resources")?.scrollIntoView()} className="text-sm text-white/70 hover:text-white transition hover:translate-x-1 duration-200 whitespace-nowrap font-medium">Class Resources</p>
+            <a href="https://echo-gwa-calculator.vercel.app/" target="_blank" rel="noreferrer">
+              <p className="text-sm text-white/70 hover:text-white transition hover:translate-x-1 duration-200 whitespace-nowrap font-medium">GWA Calculator</p>
+            </a>
           </div>
 
           <div className="flex flex-col items-start gap-3 cursor-pointer">
