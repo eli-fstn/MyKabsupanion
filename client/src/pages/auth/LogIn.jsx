@@ -95,7 +95,7 @@ function LogIn() {
           </div>
 
           <label className="text-[#A9A9A9] font-bold text-[.8rem]">CvSU Email</label>
-          <input type="email" value={email} onChange={(e) => {setEmail(e.target.value); setError((prev) => ({ ...prev, email: "" }));}} className={`border rounded-md mt-1 mb-1 p-2 w-full outline-none text-sm focus:border-green-700 ${error.email ? "border-red-500" : "border-gray-300"}`} />
+          <input name="email" autoComplete="email" type="email" value={email} onChange={(e) => {setEmail(e.target.value); setError((prev) => ({ ...prev, email: "" }));}} className={`border rounded-md mt-1 mb-1 p-2 w-full outline-none text-sm focus:border-green-700 ${error.email ? "border-red-500" : "border-gray-300"}`} />
           {error.email && (
             <p className="text-red-500 text-xs">{error.email}</p>
           )}
