@@ -13,10 +13,13 @@ export default defineConfig(({ mode }) => {
       react(),
       tailwindcss(),
       VitePWA({
-        registerType: "autoUpdate",
+        registerType: "prompt",
         manifest: false,
         workbox: {
           globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+          skipWaiting: true,
+          clientsClaim: true,
+          cleanupOutdatedCaches: true,
         },
       }),
     ],
