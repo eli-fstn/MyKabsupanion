@@ -288,3 +288,41 @@ Established the initial frontend architecture and core application pages require
 ### Fixed
 
 * Fixed initial project configuration and server integration issues.
+
+---
+
+## [2026-07-16]
+
+### Changed
+
+* Clear cached application data when users log out.
+
+---
+
+## [2026-08-12]
+
+### Added
+
+* Sentry integration for frontend monitoring, error tracking, and performance debugging.
+
+---
+
+## [2026-08-26]
+
+### Added
+
+* GWA Calculator feature in the application footer.
+* Email autocomplete support on the login form.
+
+---
+
+## [2026-09-04]
+
+### Added
+
+* User-prompted PWA update detection through the new `UpdateAvailableWatcher` component.
+* Persistent update notification toast with a **Refresh Now** action when a new deployment is available.
+
+### Changed
+
+* Switched the service worker from silent automatic updates to prompted updates with `registerType: "prompt"`.
