@@ -23,6 +23,28 @@ Ongoing improvements to the frontend experience, focusing on usability, responsi
 
 ---
 
+## [2026-09-04]
+
+### Added
+
+* User-prompted PWA update detection through the new `UpdateAvailableWatcher` component.
+* Persistent update notification toast with a **Refresh Now** action when a new deployment is available.
+
+### Changed
+
+* Switched the service worker from silent automatic updates to prompted updates with `registerType: "prompt"`.
+
+---
+
+## [2026-08-26]
+
+### Added
+
+* GWA Calculator feature in the application footer.
+* Email autocomplete support on the login form.
+
+---
+
 ## [0.0.9] - 2026-08-18
 
 ### Frontend Enhancements
@@ -48,6 +70,14 @@ This release focuses on improving schedule usability, admin controls, and interf
 * Resolved service worker runtime caching errors that could trigger unnecessary frontend warnings.
 * Fixed display and text issues in admin interfaces.
 * Improved the loading state when student data is temporarily unavailable during connection issues.
+
+---
+
+## [2026-08-12]
+
+### Added
+
+* Sentry integration for frontend monitoring, error tracking, and performance debugging.
 
 ---
 
@@ -95,6 +125,14 @@ This release focuses on improving application performance, user experience, Prog
 * Fixed issues affecting registration and report submission forms.
 * Improved authentication session expiration handling with automatic user notifications.
 * Resolved several frontend crashes and stability issues.
+
+---
+
+## [2026-07-16]
+
+### Changed
+
+* Clear cached application data when users log out.
 
 ---
 
@@ -288,41 +326,3 @@ Established the initial frontend architecture and core application pages require
 ### Fixed
 
 * Fixed initial project configuration and server integration issues.
-
----
-
-## [2026-07-16]
-
-### Changed
-
-* Clear cached application data when users log out.
-
----
-
-## [2026-08-12]
-
-### Added
-
-* Sentry integration for frontend monitoring, error tracking, and performance debugging.
-
----
-
-## [2026-08-26]
-
-### Added
-
-* GWA Calculator feature in the application footer.
-* Email autocomplete support on the login form.
-
----
-
-## [2026-09-04]
-
-### Added
-
-* User-prompted PWA update detection through the new `UpdateAvailableWatcher` component.
-* Persistent update notification toast with a **Refresh Now** action when a new deployment is available.
-
-### Changed
-
-* Switched the service worker from silent automatic updates to prompted updates with `registerType: "prompt"`.
