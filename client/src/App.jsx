@@ -3,6 +3,7 @@ import { Suspense, useEffect } from "react";
 import LoadingScreen from "./components/ui/LoadingScreen.jsx";
 import ErrorBoundary from "./components/common/ErrorBoundary.jsx";
 import SessionExpiryWatcher from "./components/common/SessionExpiryWatcher.jsx";
+import UpdateAvailableWatcher from "./components/common/UpdateAvailableWatcher.jsx";
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
   return (
     <ErrorBoundary>
       <SessionExpiryWatcher />
+      <UpdateAvailableWatcher />
       <Suspense fallback={<LoadingScreen />}>
         <AppRoutes />
       </Suspense>
