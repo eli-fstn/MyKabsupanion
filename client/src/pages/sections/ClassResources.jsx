@@ -198,7 +198,7 @@ export default function ClassResources() {
             </div>
           ) : (
             <div className="flex justify-center items-center h-96 text-center">
-              <p className="text-[#E0E0E0] dark:text-[#E0E0E0] text-sm sm:text-base">There's no resources uploaded yet.</p>
+              <p className="text-gray-400 dark:text-[#E0E0E0] text-sm sm:text-base">There's no resources uploaded yet.</p>
             </div>
           )}
         </div>
