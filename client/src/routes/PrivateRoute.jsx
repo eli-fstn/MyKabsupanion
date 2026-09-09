@@ -1,7 +1,9 @@
+import { lazy } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { useUser } from "../context/userContext";
-import Error403 from "../pages/errors/Error403";
 import LoadingScreen from "../components/ui/LoadingScreen";
+
+const Error403 = lazy(() => import("../pages/errors/Error403"))
 
 const PrivateRoute = ({ requiredRole }) => {
   const token = localStorage.getItem("token");
