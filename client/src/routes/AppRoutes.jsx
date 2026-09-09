@@ -7,10 +7,20 @@ const LogIn = lazy(() => import("../pages/auth/LogIn"));
 const Register = lazy(() => import("../pages/auth/Register"));
 const ResetPassword = lazy(() => import("../pages/auth/ResetPassword"));
 const Error404 = lazy(() => import("../pages/errors/Error404"));
-const Error503 = lazy(() => import("../pages/errors/Error503"));
 const Error403 = lazy(() => import("../pages/errors/Error403"));
+const MaintenancePage = lazy(() => import("../pages/MaintenacePage"));
 
 function AppRoutes() {
+  const isMaintenance = import.meta.env.VITE_MAINTENANCE_MODE === "true";
+
+  if (isMaintenance) {
+    return (
+      <Routes>
+        <Route path="*" element={<MaintenancePage />} />
+      </Routes>
+    );
+  }
+
   return (
     <Routes>
       {/* Public Routes */}
@@ -28,7 +38,6 @@ function AppRoutes() {
 
       <Route path="/error/403" element={<Error403 />} />
       <Route path="/error/404" element={<Error404 />} />
-      <Route path="/error/503" element={<Error503 />} />
 
       <Route path="*" element={<Error404 />} />
     </Routes>
