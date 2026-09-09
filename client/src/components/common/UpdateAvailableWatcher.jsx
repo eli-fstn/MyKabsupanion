@@ -25,8 +25,9 @@ function UpdateAvailableWatcher() {
       onOfflineReady() {
         console.log("Kabsupanion is ready to work offline.");
       },
-      onRegisteredSW(registration) {
+      onRegisteredSW(swUrl, registration) {
         if (!registration) return;
+
         setInterval(() => {
           registration.update();
         }, 5 * 60 * 1000);

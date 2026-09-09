@@ -9,7 +9,7 @@ import LoadingIcon from "../../components/ui/LoadingIcon.jsx";
 import { useToast } from "../../context/toastContext";
 import { getErrorMessage } from "../../services/errorHandler.ts";
 
-function TaskList({ studentName = "Juan" }) {
+function TaskList() {
   const [activeSubject, setActiveSubject] = useState("ALL");
   const [subject, setSubject] = useState([]);
   const [task, setTask] = useState([]);
@@ -195,7 +195,7 @@ function TaskList({ studentName = "Juan" }) {
                   <LoadingIcon dimensions="w-10 h-10" />
                 </div>
               ) : filteredTasks.length === 0 ? (
-                <div className="flex justify-center items-center my-5 h-96 flex-1 text-gray-400 dark:text-gray-500 text-center px-4 text-sm">
+                <div className="flex justify-center items-center my-5 h-96 flex-1 text-gray-400 dark:text-[#E0E0E0] text-center px-4 text-sm">
                   {activeSubject === "ALL"
                     ? "No tasks for today. Great job!"
                     : "No tasks for this subject. Keep up the good work!"}
